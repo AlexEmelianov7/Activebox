@@ -1,0 +1,94 @@
+//styles :hover :active for header navigation
+
+@mixin nav-hover-active($after-width){
+  &:hover:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: $after-width;
+    height: 3px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #BABBC5;
+  }
+  &:active:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: $after-width;
+    height: 4px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #E71414;
+  }
+  a:active{
+    color: #E71414;
+  }
+}
+
+
+//styles for fonts
+@mixin fontRaleway ($f-size, $f-weight, $l-height, $f-color){
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $l-height;
+  color: $f-color;
+}
+
+@mixin fontCardo ($f-size, $f-weight, $l-height, $f-color){
+  font-family: 'Cardo', sans-serif;
+  font-style: italic;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $l-height;
+  color: $f-color;
+}
+
+//styles for button
+@mixin btn ($btn-width,$btn-bg,$btn-pd) {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: $btn-pd;
+    transition: 0.3s;
+    width: $btn-width;
+    background: $btn-bg;
+}
+
+@mixin btn-hover-active($bg-hover, $bg-active, $bg-shadow){
+    &:hover{
+      background: $bg-hover;
+    }
+    &:active{
+      background: $bg-active;
+      box-shadow: $bg-shadow;
+    }
+}
+
+//styles :hover :active for social icons
+@mixin icon-hover-active($fill-hover, $fill-active, $icon-shadow){
+    &:hover{
+      transform: scale(1.1);
+      fill: $fill-hover;
+    }
+   &:active{
+      fill: $fill-active;
+      box-shadow: $icon-shadow;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

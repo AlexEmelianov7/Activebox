@@ -1,0 +1,4 @@
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/.parcel-cache/
+/.idea/

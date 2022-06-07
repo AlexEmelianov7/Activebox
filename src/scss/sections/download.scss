@@ -1,0 +1,58 @@
+@import "src/scss/mixin";
+
+.download-container{
+  padding: 115px 0;
+
+  @media (max-width: 1200px) {
+    padding: 78px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 60px 0 45px;
+  }
+  .download-title{
+    text-align: center;
+    @include fontRaleway(30px, 500, 35px, #000000);
+
+    @media (max-width: 1200px) {
+      @include fontRaleway(24px, 500, 28px, #000000);
+    }
+
+    @media (max-width: 767px) {
+      @include fontRaleway(18px, 500, 21px, #000000);
+    }
+  }
+  .download-subtitle{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    @include fontRaleway(18px, 700, 21px, #000000);
+
+    @media (max-width: 1200px) {
+      @include fontRaleway(14px, 700, 16px, #000000);
+    }
+
+    @media (max-width: 767px) {
+      @include fontRaleway(13px, 700, 15px, #000000);
+    }
+  }
+  .download-btn{
+    margin: 50px auto 0;
+    @include fontRaleway (24px,900,28px,#FFFFFF);
+    @include btn(370px, #FF4343, 25px 0);
+    @include btn-hover-active(#E71414, #FF4343, 4px 4px 30px #FF4343);
+
+    @media (max-width: 1200px) {
+      margin: 43px auto 0;
+      @include fontRaleway (18px,900,21px,#FFFFFF);
+      @include btn(314px, #FF4343, 28px 0);
+    }
+
+    @media (max-width: 767px) {
+      margin: 15px auto 0;
+      @include btn(280px, #FF4343, 29px 0);
+    }
+  }
+}
+
+

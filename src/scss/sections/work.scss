@@ -1,0 +1,76 @@
+@import "src/scss/mixin";
+
+.work-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-cart{
+  width: 25%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+
+  @media (max-width: 1200px) {
+    height: 230px;
+  }
+
+  @media (max-width: 767px) {
+    height: 145px;
+    width: 50%;
+  }
+    & a{
+      display: flex;
+    }
+    & img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+}
+
+.work-cart-txt{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 67, 67, 0.8);
+  opacity: 0;
+  transition: 0.3s;
+  &:hover{
+    position: absolute;
+    opacity: 1;
+  }
+  &:active{
+    background: rgba(185, 12, 12, 0.8);
+  }
+    &__title{
+      text-transform: uppercase;
+      @include fontRaleway(24px, 900, 28px, #FFFFFF);
+
+      @media (max-width: 1200px) {
+        @include fontRaleway(18px, 900, 21px, #FFFFFF);
+      }
+    }
+    &__descr{
+      padding-top: 35px;
+      @include fontRaleway(18px, 400, 21px, #FFFFFF);
+
+
+      @media (max-width: 1200px) {
+        padding-top: 30px;
+        @include fontRaleway(14px, 400, 16px, #FFFFFF);
+      }
+    }
+}

@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+ul li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
