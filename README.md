@@ -1,1 +1,1 @@
-# Activebox
+# Activebox - adaptive landing page
